@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    position: relative; /* Necesario para posicionar los logotipos */
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centramos el contenido */
+    max-width: 400px; /* Limitar el ancho del contenedor */
+    width: 100%; /* Asegurarse de que el contenedor se ajuste al tamaño de la pantalla */
+    position: relative; /* Necesario para posicionar elementos dentro del contenedor */
+}
+
+.logo {
+    position: absolute;
+    width: 50px; /* Ajusta el tamaño del logotipo según sea necesario */
+    height: auto;
+}
+
+.logo-left {
+    top: 10px;
+    left: 10px;
+}
+
+.logo-right {
+    top: 10px;
+    right: 10px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px; /* Altura máxima de la lista con scroll */
+    overflow-y: auto; /* Habilitar el desplazamiento vertical */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+li {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el nombre del ganador */
+.winner {
+    font-size: 2.5em;
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Estilo para el nombre en la animación */
+.placeholder {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+#congrats {
+    font-size: 2em;
+    color: green;
+    font-weight: bold;
+    margin-top: 20px;
+}
